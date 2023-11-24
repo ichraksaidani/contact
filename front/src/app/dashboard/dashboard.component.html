@@ -1,0 +1,13 @@
+<div class="contact-container">
+  <div class="contact-card">
+    <a href="#" class="menu-link" (click)="toggleMenu('contact')">
+      <i-feather name="message-square" class="icon feather-base"></i-feather>
+      <h1 class="menu-title">CONTACT</h1>
+    </a>
+    
+    <div *ngIf="activeMenu === 'contact'" class="submenu">
+      <a href="#" class="submenu-link" [routerLink]="['/add']">Add Contact</a>
+      <a href="#" class="submenu-link" [routerLink]="['/list']">List Contact</a>
+    </div>
+  </div>
+</div>
